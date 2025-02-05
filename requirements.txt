@@ -1,0 +1,82 @@
+# 📌 SEC 10-K Downloader – Required Python Packages
+# 
+# This tool automatically downloads the LATEST 10-K financial filings 
+# and Management Discussion & Analysis (MD&A) reports from the U.S. SEC.
+#
+# ✅ It can process up to 40 companies at a time 
+# ✅ It extracts the 10-K report and removes unnecessary exhibits.
+# ✅ Saves reports in both .txt (raw text) and .html (formatted) for easy reading.
+
+# 🔴 IMPORTANT: You MUST update the script with your email address!
+# The SEC requires a valid email in API requests.  
+# Open sec_downloader.py and update this line with your own email:
+#
+# headers = {
+#     'User-Agent': 'Company Research Tool (your-email@example.com)',
+#     'Accept-Encoding': 'gzip, deflate'
+# }
+#
+# If you do not update your email, you may be blocked from accessing SEC data.
+#
+# 🔴 IMPORTANT: You MUST also update the code to include the tickers you would like to download!
+#
+# -----------------------------------------
+# 🛠️ How to Install the Required Packages:
+#
+# 1️⃣ Check if Python is installed:
+#    Open a terminal (Mac) or Command Prompt (Windows) and type:
+#
+#        python --version
+#
+#    or, if that doesn't work:
+#
+#        python3 --version
+#
+#    If Python is not installed, download and install it from:
+#    🔗 https://www.python.org/downloads/
+#
+# 2️⃣ Install the required packages:
+#    Once Python is installed, navigate to the project folder and run:
+#
+#        pip install -r requirements.txt
+#
+#    This will install all necessary libraries for the script.
+
+# ✅ Required Libraries:
+
+# 📌 Requests - Fetches 10-K reports from the SEC website
+# 
+# What it does: This library allows Python to download data from websites, 
+# including the U.S. SEC’s EDGAR database, where all public companies 
+# file their financial reports.
+# 
+# 🔹 How to install manually:
+#    Open a terminal (Mac) or Command Prompt (Windows) and paste this:
+#        pip install requests
+requests
+
+# 📌 BeautifulSoup (bs4) - Extracts readable text from SEC reports
+#
+# What it does: The SEC provides financial reports in complex HTML format. 
+# BeautifulSoup helps clean, organize, and extract the relevant text 
+# (like company financials and management discussions).
+#
+# 🔹 How to install manually:
+#    Open a terminal (Mac) or Command Prompt (Windows) and paste this:
+#        pip install beautifulsoup4
+beautifulsoup4
+
+# -----------------------------------------
+# 🔹 OTHER NOTES:
+#
+# - The script downloads reports into a folder called `sec_downloads/`
+# - If a company does not have a 10-K filing, the script will notify you.
+# - You can modify the list of tickers inside `sec_downloader.py`
+# - If you encounter errors, double-check your internet connection 
+#   and ensure you have replaced your email in the script.
+#
+# 🚀 Once everything is set up, run the script:
+#
+#        python sec_downloader.py
+#
+# Happy analyzing! 📊
