@@ -35,7 +35,8 @@ If Python is not installed, download it here:
 To use this script, you need to download it to your computer.
 
 git clone https://github.com/vishwanathakuthota/scraper-10K-filling-AI-Agent.git
-cd sec-10k-downloader
+
+cd scraper-10K-filling-AI-Agent
 
 3️⃣ Install Required Python Packages
 Before running the script, install the required libraries:
