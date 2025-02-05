@@ -10,7 +10,7 @@ Python packages used:
 
   # 📊 SEC 10-K AI Agent for undersatning the 
 
-This Python script automates the process of downloading the latest 10-K financial filings and Management Discussion & Analysis (MD&A) reports from the U.S. Securities and Exchange Commission (SEC) website. It's designed to be a valuable tool for investors, analysts, and researchers who need quick and easy access to this information.
+This AI Agent helps the process of downloading the latest 10-K financial filings and Management Discussion & Analysis (MD&A) reports from the U.S. Securities and Exchange Commission (SEC) website. It's designed to be a valuable tool for investors, analysts, and researchers who need quick and easy access to this information.
 
 ## Key Features
 
